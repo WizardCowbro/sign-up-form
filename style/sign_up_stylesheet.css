@@ -1,3 +1,126 @@
-p {
-    color: red;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    display: flex;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Norse-bold';
+    src: url("../font/Norse-Bold.otf");
+}
+
+
+.logo-side {
+    background-image: url("../photos/gabor-kozmon-oYqd_hgMC8E-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 40%;
+
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 14rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+.logo {
+    height: 60%;
+    flex-shrink: 1;
+}
+
+.logo-text {
+    font-family: 'Norse-bold';
+    font-size: 6rem;
+
+    padding-left: 1.3rem;
+}
+
+.photo-credits {
+    align-self: center;
+    margin-top: auto;
+
+    
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.form-container {
+    background-color: rgb(249, 253, 255);
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign-up-or-else {
+    font-size: 32px;
+    width: 60%;
+    padding-bottom: 2rem;
+    padding-left: 5%;
 }

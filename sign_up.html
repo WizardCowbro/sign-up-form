@@ -21,33 +21,35 @@
         <div class="sign-up-or-else">You <span class="italic">know</span> you want to.</div>
         <div class="form-container">
             <div class="nice-message">Let's do this!</div>
-            <form action="" method="post">
-                <div class="first-name" class="input-field">
+            <form id="sign-up-form" action="" method="post">
+                <div class="input-field">
                     <label for="first-name">First name</label>
                     <input id="first-name" name="first-name">
                 </div>
-                <div class="last-name" class="input-field">
+                <div class="input-field">
                     <label for="last-name">Last name</label>
                     <input id="last-name" name="last-name">
                 </div>
-                <div class="email" class="input-field">
+                <div class="input-field">
                     <label for="email">Email</label>
                     <input id="email" name="email" type="email">
                 </div>
-                <div class="phone" class="input-field">
+                <div class="input-field">
                     <label for="phone">Phone number</label>
                     <input id="phone" name="phone" type="tel">
                 </div>
-                <div class="password"class="input-field">
+                <div class="input-field">
                     <label for="password">Password</label>
                     <input id="password" name="password" type="password">
                 </div>
-                <div class="cpassword"class="input-field">
+                <div class="input-field">
                     <label for="cpassword">Confirm password</label>
                     <input id="cpassword" name="cpassword" type="password">
                 </div>
             </form>
         </div>
+        <button type="submit" form="sign-up-form" class="btn">Create Account</button>
+        <div class="log-in">Already have an account? <a href="">Log in</a></div>
     </div>
 </body>
 </html>
